@@ -1,0 +1,44 @@
+@import '../../design-system/palette.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nameDesc {
+    color: $brand_dark;
+    margin: 10px 0;
+    &:first-child {
+      margin-top: 300px;
+    }
+    &:last-child {
+      margin-bottom: 300px;
+    }
+
+    .nameAnimated {
+      position: relative;
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        overflow: hidden;
+        color: $base_white;
+        content: 'Hyunmin Woo';
+        opacity: 0;
+        transition: 0.5s linear opacity, 1s linear width;
+      }
+
+      &:hover:after {
+        width: 1000px;
+        opacity: 1;
+        transition: 1s linear width;
+      }
+    }
+  }
+}
+
+hr {
+  width: 100vw;
+}
