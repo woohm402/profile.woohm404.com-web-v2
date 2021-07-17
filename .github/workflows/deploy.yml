@@ -39,4 +39,4 @@ jobs:
       - name: Build
         run: yarn build
       - name: Push Contents to S3
-        run: aws s3 sync ./build s3://woohm404-com/space
+        run: aws s3 sync ./build s3://woohm404-com/profile
