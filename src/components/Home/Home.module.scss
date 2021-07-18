@@ -6,7 +6,7 @@
   align-items: center;
 
   .nameDesc {
-    color: $brand_dark;
+    color: $brand_primary;
     margin: 10px 0;
     &:first-child {
       margin-top: 300px;
@@ -24,7 +24,7 @@
         bottom: 0;
         width: 0;
         overflow: hidden;
-        color: $base_white;
+        color: $base_dark;
         content: 'Hyunmin Woo';
         opacity: 0;
         transition: 0.5s linear opacity, 1s linear width;
@@ -36,6 +36,11 @@
         transition: 1s linear width;
       }
     }
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
   }
 }
 
