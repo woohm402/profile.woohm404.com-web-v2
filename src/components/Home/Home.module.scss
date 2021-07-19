@@ -41,6 +41,21 @@
   .contacts {
     display: flex;
     justify-content: center;
+    gap: 32px;
+
+    .contactIcon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transform: scale(1);
+      transition: all 0.1s linear;
+      color: $base_dark;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $brand_primary;
+      }
+    }
   }
 }
 
