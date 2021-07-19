@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IoMailSharp } from 'react-icons/all';
+import { IoMailSharp, ImGithub, ImBlog } from 'react-icons/all';
 
 import Container from '../../component-system/Container/Container';
 
@@ -21,9 +21,11 @@ const Home: React.FC = () => {
       <br />
       <br />
       <Container>
-        <h1>Contact</h1>
+        <h1 style={{ textAlign: 'center' }}>Contact</h1>
         <nav className={styles.contacts}>
-          <IoMailSharp onClick={() => window.open('mailto:woohm404@gmail.com', '_blank')} />
+          <IoMailSharp className={styles.contactIcon} onClick={() => window.open('mailto:woohm404@gmail.com', '_blank')} />
+          <ImGithub className={styles.contactIcon} onClick={() => window.open('https://github.com/woohm402', '_blank')} />
+          <ImBlog className={styles.contactIcon} onClick={() => window.open('https://velog.io/@woohm402', '_blank')} />
         </nav>
       </Container>
     </div>
