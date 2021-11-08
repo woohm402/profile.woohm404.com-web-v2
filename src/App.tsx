@@ -13,7 +13,8 @@ const App: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    ReactGA.pageview(
+      location.pathname + location.search);
   }, [location.pathname, location.search]);
 
   return (
